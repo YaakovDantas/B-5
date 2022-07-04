@@ -1,0 +1,32 @@
+{
+  "name": "B-5",
+  "description": "CRUD your cursos gestures to make shortcurts in your browser!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "backgroundImports.js"
+  },
+  "permissions": ["tabs", "storage", "activeTab", "scripting"],
+  "action": {
+    "default_icon": {
+      "16": "/images/b-5-16.png",
+      "24": "/images/b-5-24.png",
+      "32": "/images/b-5-32.png",
+      "64": "/images/b-5-64.png"
+    },
+    "default_popup": "hello.html"
+  },
+  "icons": {
+    "16": "/images/b-5-16.png",
+    "24": "/images/b-5-24.png",
+    "32": "/images/b-5-32.png",
+    "64": "/images/b-5-64.png"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["http://*.com/*", "https://*.com/*"],
+      "js": ["hammer.js", "utils.js", "contentScript.js"]
+    }
+  ]
+}

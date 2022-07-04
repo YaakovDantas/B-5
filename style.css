@@ -1,0 +1,47 @@
+.arrow {
+  font-size: 30px;
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 5px;
+}
+
+.arrows {
+  display: flex;
+}
+
+
+#pattern, #pattern-div {
+  height: fit-content;
+}
+
+th, td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+.hammer {
+  height: 500px;
+  width: 500px;
+  outline: none;
+  margin: 10px;
+  border: none;
+  border-radius: 2px;
+}
+
+.hammer-shadow {
+  box-shadow: 0 0 0 2px white,
+              0 0 0 4px black;
+}
+
+#shortchuts{
+  display: flex;
+}
+
+#shortchuts > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}

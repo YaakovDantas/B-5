@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div style="display: flex;">
+
+      <div>
+        <h1>Hold click and move your cursor on the box below.</h1>
+    <h3>Make the pattern moving the cursor in this four allowed directions below, and them release the cursor.</h3>
+    <pre class="arrows">
+      <code class="arrow">&#8593;</code>
+      <code class="arrow">&#8595;</code>
+      <code class="arrow">&#8594;</code>
+      <code class="arrow">&#8592;</code>
+    </pre>
+    <div id="shortchuts">
+      
+      <div id="gestures" class="hammer hammer-shadow">
+        <p>Make your gesture pattern</p>
+      </div>
+      <div id="pattern-div">
+        <p>Your gestures:</p>
+        <code class="arrow" id="pattern">
+    
+        </code>
+      </div>
+    </div>
+
+
+    <div>
+      <p>Choose your gesture and shortcut!</p>
+    </div>
+    <select name="" id="select">
+      <option value="new-tab">new tab</option>
+      <option value="next-tab">next tab</option>
+      <option value="back-tab">back tab</option>
+      <option value="close-tab">close tab</option>
+    </select>
+    <br>
+    <button style="margin-top: 20px;" type="submit" id="save">save</button>
+
+    </div>
+
+    <div style="margin-left: 50px; border-left:1px solid black;">
+      <h3 style="margin-left: 20px;">Your shortchuts</h3>
+        <table id="table" style="display: none;">
+          <thead>
+            <tr>
+              <th>Moves</th>
+              <th>Shortchut</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+          </tbody>
+        </table>
+    </div>
+  </div>
+  </body>
+
+  <script src="hammer.js"></script>
+  <script src="utils.js"></script>
+  <script src="options.js"></script>
+</html>
+
